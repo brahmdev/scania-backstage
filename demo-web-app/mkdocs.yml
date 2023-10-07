@@ -1,2 +1,5 @@
+plugins:
+  - techdocs-core
 nav:
+  - Home: 'index.md'
   - Setup: 'setup.md'
