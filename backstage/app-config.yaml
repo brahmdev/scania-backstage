@@ -3,7 +3,7 @@ app:
   baseUrl: http://localhost:3000
 
 organization:
-  name: My Company
+  name: Scania
 
 backend:
   # Used for enabling authentication, secret is shared by all backend plugins
@@ -64,7 +64,12 @@ techdocs:
 
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
-  providers: {}
+  environment: development
+  providers:
+    github:
+      development:
+        clientId: 60a06a9cbd5c5ad5cf57
+        clientSecret: 7f4c332e72a03e62ba20d01267c937296857cc83
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
