@@ -5,7 +5,7 @@ metadata:
   description: The place to be, for great people
   annotations:
     github.com/project-slug: 'brahmdev/scania-backstage'
-    backstage.io/techdocs-ref: url:https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: development
