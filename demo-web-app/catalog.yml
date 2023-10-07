@@ -4,7 +4,7 @@ metadata:
   name: demo-web-app
   description: The place to be, for great people
   annotations:
-    github.com/project-slug: 'scania-backstage'
+    github.com/project-slug: 'brahmdev/scania-backstage'
 spec:
   type: service
   lifecycle: development
