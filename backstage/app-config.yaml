@@ -99,6 +99,8 @@ catalog:
     
     - type: url
       target: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/data/all.yml
+      rules:
+        - allow: [User, Group]
 
     ## Uncomment these lines to add more example data
     # - type: url
