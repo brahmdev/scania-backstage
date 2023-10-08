@@ -5,5 +5,5 @@ metadata:
   description: Location of all git controlled resources
 spec:
   targets:
-    - ./../catalog-info.yaml
-    - ./all-apis.yaml
+    - ./../catalog-info.yml
+    - ./all-apis.yml
