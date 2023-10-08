@@ -23,4 +23,4 @@ spec:
   owner: demo-team
   system: scania-backstage
   definition:
-    $openapi: https://app.swaggerhub.com/apis/TestOrg_Brahmdev/RequestBody/1.0.0
+    $openapi: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/iot-api.yml
