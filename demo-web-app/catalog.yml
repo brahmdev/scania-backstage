@@ -25,4 +25,4 @@ spec:
   owner: demo-team
   system: scania-backstage
   definition:
-    $openapi: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/iot-api.yml
+    $openapi: https://api.apis.guru/v2/openapi.yaml
