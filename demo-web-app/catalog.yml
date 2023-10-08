@@ -24,5 +24,18 @@ spec:
   lifecycle: development
   owner: demo-team
   system: scania-backstage
-  definition:
-    $openapi: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/iot-api.yml
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Artist API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /artists:
+        get:
+          summary: List all artists
+  #definition:
+  #  $openapi: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/iot-api.yml
