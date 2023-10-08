@@ -1,0 +1,12 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-api
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: iot-api
+spec:
+  type: openapi
+  lifecycle: development
+  owner: demo-team
+  system: scania-backstage
+  definition:
+    $openapi: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/iot-api.yml
