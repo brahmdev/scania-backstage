@@ -6,5 +6,5 @@ metadata:
 spec:
   targets:
     - ./groups/demo-team.yml
-    - ./groups/scania-backstage-system-yml
+    - ./groups/scania-backstage-system.yml
     - ./groups/group-users.yml
