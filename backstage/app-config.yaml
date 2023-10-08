@@ -98,7 +98,7 @@ catalog:
         - allow: [User, Group]
     
     - type: url
-      target: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/catalog.yml
+      target: https://github.com/brahmdev/scania-backstage/blob/main/demo-web-app/data/all.yml
 
     ## Uncomment these lines to add more example data
     # - type: url
