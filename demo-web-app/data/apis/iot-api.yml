@@ -6,10 +6,16 @@ metadata:
   tags:
     - iot
     - rest
+  links:
+    - url: https://app.swaggerhub.com/apis/TestOrg_Brahmdev/RequestBody/1.0.0
+      title: API Spec
+      icon: code
+
 spec:
   type: openapi
-  lifecycle: experimental
+  lifecycle: development
   owner: demo-team
+  system: scania-backstage
   definition: |
     openapi: 3.0.0
     servers:
