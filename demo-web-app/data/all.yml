@@ -7,3 +7,4 @@ spec:
   targets:
     - ./../catalog-info.yml
     - ./all-apis.yml
+    - ./all-groups.yml
