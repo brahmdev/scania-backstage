@@ -1,6 +1,6 @@
 # This workflow will run Terraform configuration file
 # and creates a repository for Amazon ECR
-name: Push to Amazon ECR
+name: Dev Amazon ECR Setup
 
 on: workflow_dispatch
 
