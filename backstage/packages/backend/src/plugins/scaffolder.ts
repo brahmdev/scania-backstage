@@ -4,7 +4,7 @@ import { Router } from 'express';
 import { ScmIntegrations } from '@backstage/integration';
 import type { PluginEnvironment } from '../types';
 
-import { githubDispatchActions } from './gh-action';
+//import { githubDispatchActions } from './gh-action';
 
 export default async function createPlugin(
   env: PluginEnvironment,

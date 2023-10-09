@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:18.18.0-alpine3.17 as builder
+FROM node:18-bullseye-slim as builder
 ENV NODE_ENV production
 
 # Add a work directory
@@ -9,7 +9,7 @@ WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
 
-RUN yarn install --production
+RUN yarn install --frozen-lockfile --production
 
 # Copy app files
 COPY . .

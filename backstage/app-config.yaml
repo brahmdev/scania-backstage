@@ -30,6 +30,12 @@ backend:
   database:
     client: better-sqlite3
     connection: ':memory:'
+    # client: pg
+    # connection:
+    #   host: ${POSTGRES_HOST}
+    #   port: ${POSTGRES_PORT}
+    #   user: ${POSTGRES_USER}
+    #   password: ${POSTGRES_PASSWORD}
   # workingDirectory: /tmp # Use this to configure a working directory for the scaffolder, defaults to the OS temp-dir
 
 integrations:
@@ -68,8 +74,8 @@ auth:
   providers:
     github:
       development:
-        clientId: 60a06a9cbd5c5ad5cf57
-        clientSecret: 7f4c332e72a03e62ba20d01267c937296857cc83
+        clientId: ${AUTH_GITHUB_CLIENT_ID}
+        clientSecret: ${AUTH_GITHUB_CLIENT_SECRET}
 
 scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
