@@ -31,7 +31,10 @@ jobs:
       run: |
         calculatedSha=$(git rev-parse --short ${{ github.sha }})
         echo "::set-output name=short_sha::$calculatedSha"
-
+        
+    - name: get-npm-version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@v1.3.1
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v2
@@ -47,7 +50,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        IMAGE_TAG: ${{ steps.vars.outputs.short_sha }}
+        IMAGE_TAG: ${{ steps.package-version.outputs.current-version}}-${{ steps.vars.outputs.short_sha }}
       run: |
         # Build a docker container and
         # push it to ECR so that it can
